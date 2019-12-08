@@ -1,2 +1,2 @@
 # wojciechmarek.github.io
-Personal page
+[Go to page](https://www.wojciechmarek.github.io)
