@@ -1,3 +1,3 @@
-# wojciechmarek.github.io
+## Personal website
 
 [Click to see!](https://wojciechmarek.github.io/)
