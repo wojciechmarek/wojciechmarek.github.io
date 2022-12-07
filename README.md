@@ -1,3 +1,5 @@
-## Personal website
+# Hello World 👋🌎!
 
-[Click to see!](https://wojciechmarek.github.io/)
+Personal website powered by GitHub. Work in progress... 🚧.
+
+[https://wojciechmarek.github.io](https://wojciechmarek.github.io/)
