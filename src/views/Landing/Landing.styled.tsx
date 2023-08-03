@@ -19,7 +19,7 @@ export const LandingContent = styled.div`
 `;
 
 export const LandingGreetings = styled.h1`
-  font-size: 6rem;
+  font-size: clamp(3rem, 10vw, 8rem);
   font-weight: 900;
   background: var(--landing-header-gradient);
   background-clip: text;
@@ -30,7 +30,7 @@ export const LandingGreetings = styled.h1`
 `;
 
 export const LandingSubGreetings = styled.div`
-  font-size: 1.75rem;
+  font-size: clamp(1.25rem, 1.75vw, 2.75rem);
   font-weight: 700;
 `;
 

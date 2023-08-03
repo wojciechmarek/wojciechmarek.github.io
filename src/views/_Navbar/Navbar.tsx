@@ -4,6 +4,8 @@ import {
   NavbarContainer,
   NavbarContent,
   NavbarLink,
+  NavbarLinkItemButton,
+  NavbarLinkItem,
   NavbarLinks,
   NavbarLogoLink,
   NavbarThemeButton,
@@ -37,27 +39,27 @@ export const Navbar = () => {
           Wojciech Marek
         </NavbarLogoLink>
         <NavbarLinks>
-          <li>
+          <NavbarLinkItem>
             <NavbarLink href="#about" aria-label="About">
               About
             </NavbarLink>
-          </li>
-          <li>
+          </NavbarLinkItem>
+          <NavbarLinkItem>
             <NavbarLink href="#experience" aria-label="Experience">
               Experience
             </NavbarLink>
-          </li>
-          <li>
+          </NavbarLinkItem>
+          <NavbarLinkItem>
             <NavbarLink href="#projects" aria-label="Projects">
               Projects
             </NavbarLink>
-          </li>
-          <li>
+          </NavbarLinkItem>
+          <NavbarLinkItem>
             <NavbarLink href="#contact" aria-label="Contact">
               Contact
             </NavbarLink>
-          </li>
-          <li>
+          </NavbarLinkItem>
+          <NavbarLinkItemButton>
             <NavbarThemeButton
               onClick={handleThemeClick}
               aria-label={`Toggle theme to ${isDark ? "light" : "dark"}`}
@@ -72,7 +74,7 @@ export const Navbar = () => {
                 </span>
               )}
             </NavbarThemeButton>
-          </li>
+          </NavbarLinkItemButton>
         </NavbarLinks>
       </NavbarContent>
     </NavbarContainer>

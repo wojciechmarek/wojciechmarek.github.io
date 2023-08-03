@@ -32,14 +32,18 @@ export const NavbarLogoLink = styled.a`
 export const NavbarLinks = styled.ul`
   display: flex;
   gap: 1.75em;
+`;
+
+export const NavbarLinkItem = styled.li`
+  list-style: none;
 
   @media screen and (max-width: 768px) {
     display: none;
   }
+`;
 
-  li {
-    list-style: none;
-  }
+export const NavbarLinkItemButton = styled.li`
+  list-style: none;
 `;
 
 export const NavbarLink = styled.a`
@@ -65,6 +69,5 @@ export const NavbarThemeButton = styled.button`
 
   &:hover {
     transform: scale(1.2);
-    
   }
 `;
