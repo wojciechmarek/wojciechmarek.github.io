@@ -1,13 +1,5 @@
 import styled from "@emotion/styled";
 
-export const ProjectsContainer = styled.div`
-  background-color: var(--background-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
-
 export const ProjectsTitle = styled.h1`
   font-size: 2rem;
   font-weight: 900;

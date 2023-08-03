@@ -1,8 +1,6 @@
 import { CommonSectionContainer } from "../../components";
 import { projects } from "../../data";
 import {
-  ProjectsContainer,
-  ProjectsContent,
   ProjectsPanel,
   ProjectsPanelCategory,
   ProjectsPanelCategoryTile,
