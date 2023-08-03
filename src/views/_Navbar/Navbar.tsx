@@ -1,5 +1,3 @@
-import { useState } from "react";
-import { SunIcon, MoonIcon } from "@heroicons/react/24/solid";
 import {
   NavbarContainer,
   NavbarContent,
@@ -8,29 +6,11 @@ import {
   NavbarLinkItem,
   NavbarLinks,
   NavbarLogoLink,
-  NavbarThemeButton,
 } from "./Navbar.styled";
 
 export const Navbar = () => {
   const sound = new Audio("/click.mp3");
   sound.volume = 0.35;
-
-  const setTheme = (theme: string) => {
-    //const root = document.documentElement;
-    //root.setAttribute("data-theme", theme);
-  };
-
-  const [isDark, setIsDark] = useState(() => {
-    const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    setTheme(isDark ? "dark" : "light");
-    return isDark;
-  });
-
-  const handleThemeClick = () => {
-    sound.play();
-    setIsDark(!isDark);
-    setTheme(isDark ? "light" : "dark");
-  };
 
   return (
     <NavbarContainer>
