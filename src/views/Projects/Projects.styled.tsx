@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const ProjectsContainer = styled.div`
-  background-color: #0b0c13;
+  background-color: var(--background-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,7 +11,7 @@ export const ProjectsContainer = styled.div`
 export const ProjectsTitle = styled.h1`
   font-size: 2rem;
   font-weight: 900;
-  color: #fff;
+  color: var(--text-color);
   margin: 1em 0;
 `;
 
@@ -39,7 +39,7 @@ export const ProjectsPanelCategory = styled.div`
 
 export const ProjectsPanelCategoryTitle = styled.h2`
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--text-color);
   font-weight: 900;
   margin-left: 0.25em;
 `;
@@ -66,23 +66,23 @@ export const ProjectsPanelCategoryTile = styled.a`
   border-radius: 0.5em;
   display: flex;
   flex-direction: column;
-  background-color: #161721;
+  background-color: var(--tile-color);
   cursor: pointer;
   text-decoration: none;
   
   &:hover {
-    background-color: #7F27C3;
+    background-color: var(--tile-hover-color);
   }
 `;
 
 export const ProjectsPanelCategoryTileTitle = styled.h3`
   font-size: 1.5rem;
   font-weight: 900;
-  color: #fff;
+  color: var(--text-color);
 `;
 
 export const ProjectsPanelCategoryTileDescription = styled.p`
-  color: #fff;
+  color: var(--text-color);
   margin-top: 0.25em;
 `;
 
@@ -97,10 +97,8 @@ export const ProjectsPanelCategoryTileTags = styled.div`
 export const ProjectsPanelCategoryTileTag = styled.span`
   font-size: 0.75rem;
   font-weight: 900;
-  color: #fff;
+  color: var(--text-color);
   padding: 0.25em 0.5em;
   border-radius: 0.25em;
-  background-color: #c9335d;
+  background-color: var(--tile-hashtag-color);
 `;
-
-export const ProjectsPanelCategoryTileLink = styled.a``;

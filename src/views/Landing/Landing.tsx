@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import {
   LandingContainer,
   LandingContent,
@@ -17,7 +16,7 @@ export const Landing = () => {
           I am <LandingSubHighlight>Wojciech Marek</LandingSubHighlight>. I am a
           full-stack software engineer, but I mainly change the world using the
           superpowers of <LandingSubHighlight>TypeScript</LandingSubHighlight>{" "}
-          to create beautiful {" "}
+          to create beautiful{" "}
           <LandingSubHighlight>websites</LandingSubHighlight> and{" "}
           <LandingSubHighlight>web applications</LandingSubHighlight>.
         </LandingSubGreetings>

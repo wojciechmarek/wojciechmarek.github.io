@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const FooterContainer = styled.div`
-  background-color: #161721;
+  background-color: var(--tile-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,12 +20,12 @@ export const FooterContent = styled.div`
 `;
 
 export const FooterBoldText = styled.p`
-  color: #fff;
+  color: var(--text-color);
   font-weight: 900;
 `;
 
 export const FooterText = styled.p`
-  color: #fff;
+  color: var(--text-color);
 `;
 
 

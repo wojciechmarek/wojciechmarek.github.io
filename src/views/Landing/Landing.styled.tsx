@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const LandingContainer = styled.div`
-  background-color: #0b0c13;
+  background-color: var(--background-color);
   height: calc(100vh - 5em);
   display: flex;
   justify-content: center;
@@ -9,7 +9,7 @@ export const LandingContainer = styled.div`
 `;
 
 export const LandingContent = styled.div`
-  color: #fff;
+  color: var(--text-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,5 +35,5 @@ export const LandingSubGreetings = styled.div`
 `;
 
 export const LandingSubHighlight = styled.span`
-  background: #c9335d;
+  background: var(--text-highlight-color);
 `;

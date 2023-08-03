@@ -25,6 +25,7 @@
 * {
   margin: 0;
   padding: 0;
+  transition: background-color 0.2s ease;
 }
 
 body {
@@ -67,15 +68,11 @@ h6 {
 
 
 ::-moz-selection { /* Code for Firefox */
-  color: white;
-  background: #7F27C3;
+  color: var(--text-color);
+  background: var(--text-selected-background-color);
 }
 
 ::selection {
-  color: white;
-  background: #7F27C3;
-}
-
-:root {
-  --background-color: #F9F9F9;
+  color: var(--text-color);
+  background: var(--text-selected-background-color);
 }

@@ -30,7 +30,7 @@ export const ExperiencePanelJobDotContainer = styled.div`
   margin-top: 0.125em;
   height: 2em;
   aspect-ratio: 1/1;
-  background-color: #0b0c13;
+  background-color: var(--background-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,12 +74,12 @@ export const ExperiencePanelJobData = styled.div``;
 export const ExperiencePanelJobCompanyName = styled.a`
   font-size: 1.5rem;
   font-weight: 800;
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
 
   &:hover {
     text-decoration: underline;
-    color: #c9335d;
+    color: var(--link-hover-color);
   }
 `;
 
@@ -103,13 +103,13 @@ export const ExperiencePanelJobPositionDescription = styled.ul`
 
 export const ExperiencePanelJobPositionDescriptionItem = styled.li`
   margin: 0.25em 0;
-  color: white;
+  color: var(--text-color);
 `;
 
 export const ExperiencePanelJobPositionText = styled.div`
   font-size: 1.25rem;
   font-weight: 800;
-  color: #898989;
+  color: var(--text-dimmed-color);
 
   @media screen and (max-width: 768px) {
     &.vertical_separator {
@@ -136,7 +136,7 @@ export const ExperiencePanelJobTitle = styled.div`
 export const ExperiencePanelJobCompany = styled.div`
   font-size: 1.75rem;
   font-weight: 900;
-  color: white;
+  color: var(--text-color);
 `;
 
 export const ExperiencePanelJobDuration = styled.div`

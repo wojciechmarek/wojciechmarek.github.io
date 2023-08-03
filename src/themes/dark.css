@@ -2,17 +2,19 @@
   --background-color: #0b0c13;
 
   --tile-color: #161721;
-  --tile-hover-color: #7f27c3;
-  --tile-hashtag-color: #c9335d;
+  --tile-hover-color: #6317c0;
+  --tile-hashtag-color: #af254c;
 
-  --links-hover-color: #c9335d;
+  --link-hover-color: #af254c;
 
-  --text-color: #ffffff;
-  --text-dimmed-color: #898989;
-  --text-select-color: #7f27c3;
+  --text-color: #d0d0d0;
+  --text-contrast-color: #202020;
+  --text-dimmed-color: #808080;
+  --text-highlight-color: #af254c;
+  --text-selected-background-color: #6317c0;
 
   --landing-header-gradient: -webkit-linear-gradient(0deg, #6317c0, #b723d5);
 
   --experience-active-job-dot-color: #4cc933;
-  --experience-inactive-job-dot-color: #c9335d;
+  --experience-inactive-job-dot-color: #af254c;
 }

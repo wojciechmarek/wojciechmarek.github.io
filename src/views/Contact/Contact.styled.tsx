@@ -11,16 +11,16 @@ export const ContactSocialLinks = styled.div`
 export const ContactTitleText = styled.h2`
   font-size: 1.5rem;
   font-weight: 900;
-  color: #fff;
+  color: var(--text-color);
 `;
 
 export const ContactMeEmail = styled.a`
-  color: #fff;
+  color: var(--text-color);
   font-weight: 900;
   font-size: 1.5rem;
   
   &:hover {
-    color: #c9335d;
+    color: var(--link-hover-color);
   }
 `;
 
@@ -43,9 +43,9 @@ export const ContactLink = styled.a`
   display: flex;
   align-items: center;
   height: 3em;
-  background-color: #161721;
+  background-color: var(--tile-color);
   padding-left: 1em;
-  color: #fff;
+  color: var(--text-color);
   font-weight: 900;
   cursor: pointer;
   border-radius: 0.5em;
@@ -68,7 +68,7 @@ export const ContactLink = styled.a`
 
 export const ContactOrText = styled.p`
   margin: 0 1em;
-  color: #fff;
+  color: var(--text-color);
   font-weight: 900;
   font-size: 2rem;
 `;

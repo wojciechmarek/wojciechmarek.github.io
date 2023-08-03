@@ -1,15 +1,17 @@
 [data-theme='light'] {
-  --background-color: #0b0c13;
+  --background-color: #ffffff;
 
-  --tile-color: #161721;
-  --tile-hover-color: #7f27c3;
-  --tile-hashtag-color: #c9335d;
+  --tile-color: #f0f0f0;
+  --tile-hover-color: #b67bff;
+  --tile-hashtag-color: #d45176;
 
-  --links-hover-color: #c9335d;
+  --link-hover-color: #c9335d;
 
-  --text-color: #ffffff;
-  --text-dimmed-color: #898989;
-  --text-select-color: #7f27c3;
+  --text-color: #202020;
+  --text-contrast-color: #d0d0d0;
+  --text-dimmed-color: #707070;
+  --text-highlight-color: #d45176;
+  --text-selected-background-color: #b67bff;
 
   --landing-header-gradient: -webkit-linear-gradient(0deg, #5308af, #a811c6);
 

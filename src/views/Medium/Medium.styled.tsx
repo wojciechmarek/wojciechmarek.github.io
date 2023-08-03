@@ -16,7 +16,7 @@ export const MediumPanelCategory = styled.div`
 
 export const MediumPanelCategoryTitle = styled.h2`
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--text-color);
   font-weight: 900;
   margin-left: 0.25em;
 `;
@@ -43,7 +43,7 @@ export const MediumPanelCategoryTile = styled.a<{ tileColor?: string }>`
   border-radius: 0.5em;
   display: flex;
   flex-direction: column;
-  background-color: #161721;
+  background-color: var(--background-color);;
   cursor: pointer;
   text-decoration: none;
   
@@ -56,12 +56,12 @@ export const MediumPanelCategoryTile = styled.a<{ tileColor?: string }>`
 export const MediumPanelCategoryTileTitle = styled.h3`
   font-size: 1.5rem;
   font-weight: 900;
-  color: #fff;
+  color: var(--text-color);
   margin-bottom: 0.25em;
 `;
 
 export const MediumPanelCategoryTileDescription = styled.p`
-  color: #fff;
+  color: var(--text-color);
 `;
 
 export const MediumPanelCategoryTileLink = styled.a``;

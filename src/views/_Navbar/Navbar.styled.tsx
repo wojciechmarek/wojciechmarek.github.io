@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export const NavbarContainer = styled.div`
   width: 100%;
-  background-color: #0b0c13;
+  background-color: var(--background-color);
   display: flex;
   justify-content: center;
   height: 5em;
@@ -19,13 +19,12 @@ export const NavbarContent = styled.div`
 export const NavbarLogoLink = styled.a`
   font-size: 1.5rem;
   font-weight: 800;
-  color: #fff;
+  color: var(--text-color);
   cursor: pointer;
-  color: #fff;
   text-decoration: none;
 
   &:hover {
-    color: #c9335d;
+    color: var(--link-hover-color);
     text-decoration: underline;
   }
 `;
@@ -43,11 +42,25 @@ export const NavbarLink = styled.a`
   font-size: 1.25rem;
   font-weight: 700;
   cursor: pointer;
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
 
   &:hover {
-    color: #c9335d;
+    color: var(--link-hover-color);
     text-decoration: underline;
+  }
+`;
+
+export const NavbarThemeButton = styled.button`
+  border: none;
+  background-color: transparent;
+  width: 1.6em;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+    
   }
 `;

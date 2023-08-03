@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const CommonSectionContainerStyle = styled.div`
-  background-color: #0b0c13;
+  background-color: var(--background-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
