@@ -9,13 +9,6 @@ export const ExperienceContainer = styled.div`
   align-items: center;
 `;
 
-export const ExperienceTitle = styled.h1`
-  font-size: 2rem;
-  font-weight: 900;
-  color: #fff;
-  margin: 1em 0;
-`;
-
 export const ExperienceContent = styled.div`
   max-width: 65em;
   width: 90%;

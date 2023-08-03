@@ -1,3 +1,4 @@
+import { CommonSectionTitle } from "../../components";
 import {
   MediumContainer,
   MediumContent,
@@ -8,7 +9,6 @@ import {
   MediumPanelCategoryTileTitle,
   MediumPanelCategoryTiles,
   MediumPanelCategoryTitle,
-  MediumTitle,
 } from "./Medium.styled";
 
 const categories = [
@@ -52,7 +52,7 @@ export const Medium = () => {
   return (
     <MediumContainer id="articles">
       <MediumContent>
-        <MediumTitle>#medium_articles</MediumTitle>
+        <CommonSectionTitle title="#medium_articles" />
         <MediumPanel>
           {categories.map((category) => (
             <MediumPanelCategory>

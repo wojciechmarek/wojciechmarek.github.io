@@ -8,13 +8,6 @@ export const MediumContainer = styled.div`
   align-items: center;
 `;
 
-export const MediumTitle = styled.h1`
-  font-size: 2rem;
-  font-weight: 900;
-  color: #fff;
-  margin: 1em 0;
-`;
-
 export const MediumContent = styled.div`
   width: 90%;
   flex-grow: 1;

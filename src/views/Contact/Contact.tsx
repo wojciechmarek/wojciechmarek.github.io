@@ -1,3 +1,4 @@
+import { CommonSectionTitle } from "../../components";
 import {
   ContactContainer,
   ContactContent,
@@ -6,7 +7,6 @@ import {
   ContactMeEmail,
   ContactOptions,
   ContactSocialLinks,
-  ContactTitle,
   ContactTitleText,
 } from "./Contact.styled";
 
@@ -25,7 +25,7 @@ export const Contact = () => {
   return (
     <ContactContainer id="contact">
       <ContactContent>
-        <ContactTitle>#contact_me</ContactTitle>
+        <CommonSectionTitle title="#contact_me" />
         <ContactOptions>
           <ContactSocialLinks>
             <ContactTitleText>

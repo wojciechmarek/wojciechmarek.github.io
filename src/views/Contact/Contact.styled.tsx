@@ -15,13 +15,6 @@ export const ContactContent = styled.div`
   margin-bottom: 5em;
 `;
 
-export const ContactTitle = styled.h1`
-  font-size: 2rem;
-  font-weight: 900;
-  color: #fff;
-  margin: 1em 0;
-`;
-
 export const ContactOptions = styled.div`
   display: flex;
 `;

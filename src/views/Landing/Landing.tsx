@@ -15,7 +15,7 @@ export const Landing = () => {
   return (
     <LandingContainer>
       <LandingContent>
-        <LandingGreetings>Hello stranger!</LandingGreetings>
+        <LandingGreetings>Hello world!</LandingGreetings>
         <LandingSubGreetings>
           I am <LandingSubHighlight>Wojciech Marek</LandingSubHighlight>. I am a
           full-stack software engineer, but I mainly change the world using the

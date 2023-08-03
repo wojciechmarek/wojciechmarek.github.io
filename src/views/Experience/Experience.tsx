@@ -1,3 +1,4 @@
+import { CommonSectionTitle } from "../../components";
 import {
   ExperienceContainer,
   ExperienceContent,
@@ -15,7 +16,6 @@ import {
   ExperiencePanelJobPositionDescription,
   ExperiencePanelJobPositionDescriptionItem,
   ExperiencePanelJobPositionText,
-  ExperienceTitle,
 } from "./Experience.styled";
 
 const companies = [
@@ -94,7 +94,7 @@ export const Experience = () => {
   return (
     <ExperienceContainer id="experience">
       <ExperienceContent>
-        <ExperienceTitle>#my_experience</ExperienceTitle>
+        <CommonSectionTitle title="#my_experience" />
         <ExperiencePanel>
           {/* <ExperiencePanelVerticalLine /> */}
           <ExperiencePanelContent>
