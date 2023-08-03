@@ -17,7 +17,7 @@ export const Navbar = () => {
           <NavbarLink href="#projects">Projects</NavbarLink>
           <NavbarLink href="#articles">Articles</NavbarLink>
           <NavbarLink href="#contact">Contact</NavbarLink>
-          <NavbarLink>☀</NavbarLink>
+          {/* <NavbarLink>☀</NavbarLink> */}
         </NavbarLinks>
       </NavbarContent>
     </NavbarContainer>
