@@ -21,7 +21,7 @@ export const LandingContent = styled.div`
 export const LandingGreetings = styled.h1`
   font-size: 6rem;
   font-weight: 900;
-  background: -webkit-linear-gradient(0deg, #6317c0, #b723d5);
+  background: var(--landing-header-gradient);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

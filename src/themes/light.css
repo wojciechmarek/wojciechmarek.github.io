@@ -1,0 +1,18 @@
+[data-theme='light'] {
+  --background-color: #0b0c13;
+
+  --tile-color: #161721;
+  --tile-hover-color: #7f27c3;
+  --tile-hashtag-color: #c9335d;
+
+  --links-hover-color: #c9335d;
+
+  --text-color: #ffffff;
+  --text-dimmed-color: #898989;
+  --text-select-color: #7f27c3;
+
+  --landing-header-gradient: -webkit-linear-gradient(0deg, #5308af, #a811c6);
+
+  --experience-active-job-dot-color: #4cc933;
+  --experience-inactive-job-dot-color: #c9335d;
+}
