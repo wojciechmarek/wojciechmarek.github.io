@@ -16,8 +16,8 @@ export const Navbar = () => {
   sound.volume = 0.35;
 
   const setTheme = (theme: string) => {
-    const root = document.documentElement;
-    root.setAttribute("data-theme", theme);
+    //const root = document.documentElement;
+    //root.setAttribute("data-theme", theme);
   };
 
   const [isDark, setIsDark] = useState(() => {
@@ -41,26 +41,26 @@ export const Navbar = () => {
         <NavbarLinks>
           <NavbarLinkItem>
             <NavbarLink href="#about" aria-label="About">
-              About
+              about
             </NavbarLink>
           </NavbarLinkItem>
           <NavbarLinkItem>
             <NavbarLink href="#experience" aria-label="Experience">
-              Experience
+              experience
             </NavbarLink>
           </NavbarLinkItem>
           <NavbarLinkItem>
             <NavbarLink href="#projects" aria-label="Projects">
-              Projects
+              projects
             </NavbarLink>
           </NavbarLinkItem>
           <NavbarLinkItem>
             <NavbarLink href="#contact" aria-label="Contact">
-              Contact
+              contact
             </NavbarLink>
           </NavbarLinkItem>
           <NavbarLinkItemButton>
-            <NavbarThemeButton
+            {/* <NavbarThemeButton
               onClick={handleThemeClick}
               aria-label={`Toggle theme to ${isDark ? "light" : "dark"}`}
             >
@@ -73,7 +73,7 @@ export const Navbar = () => {
                   <MoonIcon className="h-6 w-6 text-yellow-500" />
                 </span>
               )}
-            </NavbarThemeButton>
+            </NavbarThemeButton> */}
           </NavbarLinkItemButton>
         </NavbarLinks>
       </NavbarContent>

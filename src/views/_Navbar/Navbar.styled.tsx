@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export const NavbarContainer = styled.nav`
   width: 100%;
-  background-color: var(--background-color);
+  background-color: var(--navbar-background-color);
   display: flex;
   justify-content: center;
   height: 5em;
@@ -18,7 +18,7 @@ export const NavbarContent = styled.div`
 
 export const NavbarLogoLink = styled.a`
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 900;
   color: var(--text-color);
   cursor: pointer;
   text-decoration: none;

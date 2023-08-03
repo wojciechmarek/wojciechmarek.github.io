@@ -12,7 +12,7 @@ import {
 export const Contact = () => {
   return (
     <CommonSectionContainer id="contact">
-      <CommonSectionTitle title="#contact_me" />
+      <CommonSectionTitle title="#contact" />
       <ContactOptions>
         <ContactSocialLinks>
           <ContactTitleText>

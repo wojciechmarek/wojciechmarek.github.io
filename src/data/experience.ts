@@ -59,7 +59,7 @@ export const experience = [
     isActive: false,
     positions: [
       {
-        name: "Junior .Net Developer (working student)",
+        name: "Junior .Net Developer",
         duration: "October 2018 - April 2019",
         responsibilities: [
           "Creating a Xamarin mobile application for existing CMS system.",

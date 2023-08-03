@@ -5,7 +5,7 @@ import { AboutTextParagraph } from "./About.styled";
 export const About = () => {
   return (
     <CommonSectionContainer id="about">
-      <CommonSectionTitle title="#about_me" />
+      <CommonSectionTitle title="#about" />
       {about.map((paragraph) => (
         <AboutTextParagraph key={paragraph}>{paragraph}</AboutTextParagraph>
       ))}

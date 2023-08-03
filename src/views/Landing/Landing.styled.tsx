@@ -35,5 +35,6 @@ export const LandingSubGreetings = styled.div`
 `;
 
 export const LandingSubHighlight = styled.span`
-  background: var(--text-highlight-color);
+  color: var(--text-highlight-color);
+  font-weight: bold;
 `;

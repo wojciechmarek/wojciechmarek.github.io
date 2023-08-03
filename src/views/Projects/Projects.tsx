@@ -16,7 +16,7 @@ import {
 export const Projects = () => {
   return (
     <CommonSectionContainer id="projects">
-      <ProjectsTitle>#some_projects</ProjectsTitle>
+      <ProjectsTitle>#projects</ProjectsTitle>
       <ProjectsPanel>
         {projects.map((project) => (
           <ProjectsPanelCategory key={project.title}>

@@ -21,7 +21,7 @@ import {
 export const Experience = () => {
   return (
     <CommonSectionContainer id="experience">
-      <CommonSectionTitle title="#my_experience" />
+      <CommonSectionTitle title="#experience" />
       <ExperiencePanel>
         {/* <ExperiencePanelVerticalLine /> */}
         <ExperiencePanelContent>
