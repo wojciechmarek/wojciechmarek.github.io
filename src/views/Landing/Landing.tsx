@@ -6,16 +6,13 @@ import {
   LandingSubGreetings,
   LandingSubHighlight,
 } from "./Landing.styled";
-
-export interface LandingProps {
-  children: ReactNode;
-}
+import { landingHeader } from "../../data";
 
 export const Landing = () => {
   return (
     <LandingContainer>
       <LandingContent>
-        <LandingGreetings>Hello world!</LandingGreetings>
+        <LandingGreetings>{landingHeader}</LandingGreetings>
         <LandingSubGreetings>
           I am <LandingSubHighlight>Wojciech Marek</LandingSubHighlight>. I am a
           full-stack software engineer, but I mainly change the world using the

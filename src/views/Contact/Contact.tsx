@@ -1,4 +1,5 @@
 import { CommonSectionContainer, CommonSectionTitle } from "../../components";
+import { links } from "../../data";
 import {
   ContactLink,
   ContactLinksContainer,
@@ -7,17 +8,6 @@ import {
   ContactSocialLinks,
   ContactTitleText,
 } from "./Contact.styled";
-
-const links = [
-  {
-    name: "LinkedIn",
-    link: "https://www.linkedin.com/in/wojciech-marek/",
-  },
-  {
-    name: "Github",
-    link: "https://github.com/wojciechmarek",
-  },
-];
 
 export const Contact = () => {
   return (

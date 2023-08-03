@@ -1,21 +1,5 @@
 import styled from "@emotion/styled";
 
-export const MediumContainer = styled.div`
-  background-color: #0b0c13;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const MediumContent = styled.div`
-  width: 90%;
-  flex-grow: 1;
-  margin-bottom: 5em;
-  max-width: 65em;
-  width: 90%;
-`;
-
 export const MediumPanel = styled.div`
   position: relative;
   display: flex;

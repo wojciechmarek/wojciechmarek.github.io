@@ -1,7 +1,6 @@
 import { CommonSectionContainer, CommonSectionTitle } from "../../components";
+import { medium } from "../../data";
 import {
-  MediumContainer,
-  MediumContent,
   MediumPanel,
   MediumPanelCategory,
   MediumPanelCategoryTile,
@@ -11,66 +10,28 @@ import {
   MediumPanelCategoryTitle,
 } from "./Medium.styled";
 
-const categories = [
-  {
-    title: "Artificial Intelligence",
-    posts: [
-      {
-        title: "Basics of an Artificial Intelligence",
-        description:
-          "A sample website that uses GPT-3 OpenAI API to generate text based on user input.",
-        link: "https://github.com/wojciechmarek/gpt-3-open-ai",
-        color: "#4233c9",
-      },
-      {
-        title: "Basics of a Machine Learning",
-        description: "A sample website for a travel agency.",
-        link: "https://github.com/wojciechmarek/travel-agency",
-        color: "#4233c9",
-      },
-      {
-        title: "Basics of a an Artificial Neural Network",
-        description:
-          "A sample website for a fictional company that sells robots.",
-        link: "https://github.com/wojciechmarek/robo-punks",
-        color: "#4233c9",
-      },
-    ],
-  },
-  {
-    title: "CSS",
-    posts: [
-      {
-        title: "CSS Grid",
-        description: "A WPF app that recognizes language of a given text.",
-        link: "https://github.com/wojciechmarek/language-recognition",
-        color: "#c93392",
-      },
-    ],
-  },
-];
 
 export const Medium = () => {
   return (
     <CommonSectionContainer id="articles">
       <CommonSectionTitle title="#medium_articles" />
       <MediumPanel>
-        {categories.map((category) => (
+        {medium.map((category) => (
           <MediumPanelCategory>
             <MediumPanelCategoryTitle>
               {category.title}
             </MediumPanelCategoryTitle>
             <MediumPanelCategoryTiles>
-              {category.posts.map((posts) => (
+              {category.posts.map((post) => (
                 <MediumPanelCategoryTile
-                  tileColor={posts.color}
-                  href={posts.link}
+                  tileColor={post.color}
+                  href={post.link}
                 >
                   <MediumPanelCategoryTileTitle>
-                    {posts.title}
+                    {post.title}
                   </MediumPanelCategoryTileTitle>
                   <MediumPanelCategoryTileDescription>
-                    {posts.description}
+                    {post.description}
                   </MediumPanelCategoryTileDescription>
                 </MediumPanelCategoryTile>
               ))}
