@@ -1,0 +1,21 @@
+[data-theme='light'] {
+  --navbar-background-color: #dddddd;
+  --background-color: #ffffff;
+
+  --tile-color: #f0f0f0;
+  --tile-hover-color: #b67bff;
+  --tile-hashtag-color: #d45176;
+
+  --link-hover-color: #c9335d;
+
+  --text-color: #202020;
+  --text-contrast-color: #d0d0d0;
+  --text-dimmed-color: #707070;
+  --text-highlight-color: #d45176;
+  --text-selected-background-color: #b67bff;
+
+  --landing-header-gradient: -webkit-linear-gradient(0deg, #5308af, #a811c6);
+
+  --experience-active-job-dot-color: #4cc933;
+  --experience-inactive-job-dot-color: #c9335d;
+}
