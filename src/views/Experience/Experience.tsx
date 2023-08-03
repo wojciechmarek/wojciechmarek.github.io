@@ -97,6 +97,7 @@ export const Experience = () => {
       <ExperienceContent>
         <ExperienceTitle>#my_experience</ExperienceTitle>
         <ExperiencePanel>
+          {/* <ExperiencePanelVerticalLine /> */}
           <ExperiencePanelContent>
             {companies.map((job) => (
               <ExperiencePanelJobContainer>

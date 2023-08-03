@@ -29,9 +29,12 @@ export const ExperiencePanel = styled.div`
 `;
 
 export const ExperiencePanelVerticalLine = styled.div`
-  /* width: 0.125em;
-  height: 20em;
-  background-color: white; */
+  width: 0.125em;
+  height: 100vh;
+  position: relative;
+  left: 1em;
+  top: 1em;
+  background-color: #898989;
 `;
 
 export const ExperiencePanelContent = styled.div`
@@ -47,7 +50,7 @@ export const ExperiencePanelJobContainer = styled.div`
 `;
 
 export const ExperiencePanelJobDotContainer = styled.div`
-  margin-top: 0.2em;
+  margin-top: 0.125em;
   height: 2em;
   aspect-ratio: 1/1;
   background-color: #0b0c13;

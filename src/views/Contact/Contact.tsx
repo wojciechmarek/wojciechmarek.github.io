@@ -10,6 +10,17 @@ import {
   ContactTitleText,
 } from "./Contact.styled";
 
+const links = [
+  {
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/wojciech-marek/",
+  },
+  {
+    name: "Github",
+    link: "https://github.com/wojciechmarek",
+  },
+];
+
 export const Contact = () => {
   return (
     <ContactContainer id="contact">
@@ -17,34 +28,20 @@ export const Contact = () => {
         <ContactTitle>#contact_me</ContactTitle>
         <ContactOptions>
           <ContactSocialLinks>
-            <ContactTitleText>Find me thought social links:</ContactTitleText>
-            <ContactLinksContainer>
-              <ContactLink
-                href="https://www.linkedin.com/in/wojciech-marek/"
-                target="_blank"
-              >
-                Linked
-              </ContactLink>
-              <ContactLink
-                href="https://github.com/wojciechmarek"
-                target="_blank"
-              >
-                Github
-              </ContactLink>
-              <ContactLink
-                href="https://medium.com/@wojciechmarek"
-                target="_blank"
-              >
-                Medium
-              </ContactLink>
-            </ContactLinksContainer>
             <ContactTitleText>
-              Or send me an{" "}
+              Send me an {" "}
               <ContactMeEmail href="mailto:marekwojciech@outlook.com">
                 e-mail
-              </ContactMeEmail>
-              .
+              </ContactMeEmail>{" "}
+              or find me thought social links:
             </ContactTitleText>
+            <ContactLinksContainer>
+              {links.map((link) => (
+                <ContactLink href={link.link} target="_blank">
+                  {link.name}
+                </ContactLink>
+              ))}
+            </ContactLinksContainer>
           </ContactSocialLinks>
         </ContactOptions>
       </ContactContent>

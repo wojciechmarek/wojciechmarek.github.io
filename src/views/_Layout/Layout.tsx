@@ -5,7 +5,7 @@ import { Projects } from "../Projects";
 import { Footer } from "../Footer";
 import { Contact } from "../Contact";
 import { Medium } from "../Medium";
-import { Navbar } from "../Navbar";
+import { Navbar } from "../_Navbar";
 
 export const Layout = () => {
   return (
@@ -15,7 +15,7 @@ export const Layout = () => {
       <About />
       <Experience />
       <Projects />
-      <Medium />
+      {/* <Medium /> */}
       <Contact />
       <Footer />
     </>
