@@ -103,6 +103,7 @@ export const ExperiencePanelJobPositionDescription = styled.ul`
 
 export const ExperiencePanelJobPositionDescriptionItem = styled.li`
   margin: 0.25em 0;
+  color: white;
 `;
 
 export const ExperiencePanelJobPositionText = styled.div`

@@ -12,5 +12,6 @@ export const CommonContactContentStyle = styled.div`
   max-width: 65em;
   width: 90%;
   flex-grow: 1;
+  margin-top: 2em;
   margin-bottom: 5em;
 `;

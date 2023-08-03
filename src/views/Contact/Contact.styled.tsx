@@ -22,7 +22,6 @@ export const ContactMeEmail = styled.a`
   &:hover {
     color: #c9335d;
   }
-
 `;
 
 export const ContactLinksContainer = styled.div`
