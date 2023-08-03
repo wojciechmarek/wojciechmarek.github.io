@@ -1,20 +1,5 @@
 import styled from "@emotion/styled";
 
-export const ContactContainer = styled.div`
-  background-color: #0b0c13;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const ContactContent = styled.div`
-  max-width: 65em;
-  width: 90%;
-  flex-grow: 1;
-  margin-bottom: 5em;
-`;
-
 export const ContactOptions = styled.div`
   display: flex;
 `;

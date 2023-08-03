@@ -1,7 +1,5 @@
-import { CommonSectionTitle } from "../../components";
+import { CommonSectionContainer, CommonSectionTitle } from "../../components";
 import {
-  ExperienceContainer,
-  ExperienceContent,
   ExperiencePanel,
   ExperiencePanelContent,
   ExperiencePanelJobCompanyName,
@@ -92,59 +90,57 @@ const companies = [
 
 export const Experience = () => {
   return (
-    <ExperienceContainer id="experience">
-      <ExperienceContent>
-        <CommonSectionTitle title="#my_experience" />
-        <ExperiencePanel>
-          {/* <ExperiencePanelVerticalLine /> */}
-          <ExperiencePanelContent>
-            {companies.map((job) => (
-              <ExperiencePanelJobContainer>
-                <ExperiencePanelJobDotContainer>
-                  <ExperiencePanelJobDot isActive={job.isActive} />
-                  <ExperiencePanelJobDotRing isActive={job.isActive} />
-                </ExperiencePanelJobDotContainer>
-                <ExperiencePanelJobContent>
-                  <ExperiencePanelJobData>
-                    <ExperiencePanelJobCompanyName
-                      href={job.link}
-                      target="_blank"
-                    >
-                      {job.name}
-                    </ExperiencePanelJobCompanyName>
-                    {job.positions.map((position) => (
-                      <ExperiencePanelJobPositionContainer key={position.name}>
-                        <ExperiencePanelJobPositionData>
-                          <ExperiencePanelJobPositionText>
-                            {position.duration}
-                          </ExperiencePanelJobPositionText>
-                          <ExperiencePanelJobPositionText className="vertical_separator">
-                            |
-                          </ExperiencePanelJobPositionText>
-                          <ExperiencePanelJobPositionText>
-                            {position.name}
-                          </ExperiencePanelJobPositionText>
-                        </ExperiencePanelJobPositionData>
-                        <ExperiencePanelJobPositionDescription>
-                          {position?.responsibilities?.map(
-                            (responsibility: string) => (
-                              <ExperiencePanelJobPositionDescriptionItem
-                                key={responsibility}
-                              >
-                                {responsibility}
-                              </ExperiencePanelJobPositionDescriptionItem>
-                            )
-                          )}
-                        </ExperiencePanelJobPositionDescription>
-                      </ExperiencePanelJobPositionContainer>
-                    ))}
-                  </ExperiencePanelJobData>
-                </ExperiencePanelJobContent>
-              </ExperiencePanelJobContainer>
-            ))}
-          </ExperiencePanelContent>
-        </ExperiencePanel>
-      </ExperienceContent>
-    </ExperienceContainer>
+    <CommonSectionContainer id="experience">
+      <CommonSectionTitle title="#my_experience" />
+      <ExperiencePanel>
+        {/* <ExperiencePanelVerticalLine /> */}
+        <ExperiencePanelContent>
+          {companies.map((job) => (
+            <ExperiencePanelJobContainer>
+              <ExperiencePanelJobDotContainer>
+                <ExperiencePanelJobDot isActive={job.isActive} />
+                <ExperiencePanelJobDotRing isActive={job.isActive} />
+              </ExperiencePanelJobDotContainer>
+              <ExperiencePanelJobContent>
+                <ExperiencePanelJobData>
+                  <ExperiencePanelJobCompanyName
+                    href={job.link}
+                    target="_blank"
+                  >
+                    {job.name}
+                  </ExperiencePanelJobCompanyName>
+                  {job.positions.map((position) => (
+                    <ExperiencePanelJobPositionContainer key={position.name}>
+                      <ExperiencePanelJobPositionData>
+                        <ExperiencePanelJobPositionText>
+                          {position.duration}
+                        </ExperiencePanelJobPositionText>
+                        <ExperiencePanelJobPositionText className="vertical_separator">
+                          |
+                        </ExperiencePanelJobPositionText>
+                        <ExperiencePanelJobPositionText>
+                          {position.name}
+                        </ExperiencePanelJobPositionText>
+                      </ExperiencePanelJobPositionData>
+                      <ExperiencePanelJobPositionDescription>
+                        {position?.responsibilities?.map(
+                          (responsibility: string) => (
+                            <ExperiencePanelJobPositionDescriptionItem
+                              key={responsibility}
+                            >
+                              {responsibility}
+                            </ExperiencePanelJobPositionDescriptionItem>
+                          )
+                        )}
+                      </ExperiencePanelJobPositionDescription>
+                    </ExperiencePanelJobPositionContainer>
+                  ))}
+                </ExperiencePanelJobData>
+              </ExperiencePanelJobContent>
+            </ExperiencePanelJobContainer>
+          ))}
+        </ExperiencePanelContent>
+      </ExperiencePanel>
+    </CommonSectionContainer>
   );
 };

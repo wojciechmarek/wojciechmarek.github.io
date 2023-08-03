@@ -1,4 +1,4 @@
-import { CommonSectionTitle } from "../../components";
+import { CommonSectionContainer, CommonSectionTitle } from "../../components";
 import {
   MediumContainer,
   MediumContent,
@@ -17,7 +17,8 @@ const categories = [
     posts: [
       {
         title: "Basics of an Artificial Intelligence",
-        description: "A sample website that uses GPT-3 OpenAI API to generate text based on user input.",
+        description:
+          "A sample website that uses GPT-3 OpenAI API to generate text based on user input.",
         link: "https://github.com/wojciechmarek/gpt-3-open-ai",
         color: "#4233c9",
       },
@@ -29,7 +30,8 @@ const categories = [
       },
       {
         title: "Basics of a an Artificial Neural Network",
-        description: "A sample website for a fictional company that sells robots.",
+        description:
+          "A sample website for a fictional company that sells robots.",
         link: "https://github.com/wojciechmarek/robo-punks",
         color: "#4233c9",
       },
@@ -50,31 +52,32 @@ const categories = [
 
 export const Medium = () => {
   return (
-    <MediumContainer id="articles">
-      <MediumContent>
-        <CommonSectionTitle title="#medium_articles" />
-        <MediumPanel>
-          {categories.map((category) => (
-            <MediumPanelCategory>
-              <MediumPanelCategoryTitle>
-                {category.title}
-              </MediumPanelCategoryTitle>
-              <MediumPanelCategoryTiles>
-                {category.posts.map((posts) => (
-                  <MediumPanelCategoryTile tileColor={posts.color} href={posts.link}>
-                    <MediumPanelCategoryTileTitle>
-                      {posts.title}
-                    </MediumPanelCategoryTileTitle>
-                    <MediumPanelCategoryTileDescription>
-                      {posts.description}
-                    </MediumPanelCategoryTileDescription>
-                  </MediumPanelCategoryTile>
-                ))}
-              </MediumPanelCategoryTiles>
-            </MediumPanelCategory>
-          ))}
-        </MediumPanel>
-      </MediumContent>
-    </MediumContainer>
+    <CommonSectionContainer id="articles">
+      <CommonSectionTitle title="#medium_articles" />
+      <MediumPanel>
+        {categories.map((category) => (
+          <MediumPanelCategory>
+            <MediumPanelCategoryTitle>
+              {category.title}
+            </MediumPanelCategoryTitle>
+            <MediumPanelCategoryTiles>
+              {category.posts.map((posts) => (
+                <MediumPanelCategoryTile
+                  tileColor={posts.color}
+                  href={posts.link}
+                >
+                  <MediumPanelCategoryTileTitle>
+                    {posts.title}
+                  </MediumPanelCategoryTileTitle>
+                  <MediumPanelCategoryTileDescription>
+                    {posts.description}
+                  </MediumPanelCategoryTileDescription>
+                </MediumPanelCategoryTile>
+              ))}
+            </MediumPanelCategoryTiles>
+          </MediumPanelCategory>
+        ))}
+      </MediumPanel>
+    </CommonSectionContainer>
   );
 };

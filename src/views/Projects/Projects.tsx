@@ -1,3 +1,4 @@
+import { CommonSectionContainer } from "../../components";
 import {
   ProjectsContainer,
   ProjectsContent,
@@ -31,7 +32,8 @@ const projects = [
       },
       {
         title: "Robo Punks",
-        description: "A sample website of a fake game, having a shop connected to Metamask wallet.",
+        description:
+          "A sample website of a fake game, having a shop connected to Metamask wallet.",
         link: "https://github.com/wojciechmarek/robo-punks",
         tags: ["react", "typescript", "metamask", "blockchain", "ethereum"],
       },
@@ -48,7 +50,8 @@ const projects = [
       },
       {
         title: "Todo List",
-        description: "A simple todo list app representing most of the trends in the application UI design.",
+        description:
+          "A simple todo list app representing most of the trends in the application UI design.",
         link: "https://github.com/wojciechmarek/todo-list",
         tags: ["react", "typescript", "design-styles", "styled-components"],
       },
@@ -56,15 +59,21 @@ const projects = [
         title: "React Navbar",
         description: "A sample ready-to-use navbar for React apps.",
         link: "https://github.com/wojciechmarek/awesome-react-navbar",
-        tags: ["react", "typescript", "tailwind", "mega-menu", "navbar", "kbar"],
+        tags: [
+          "react",
+          "typescript",
+          "tailwind",
+          "mega-menu",
+          "navbar",
+          "kbar",
+        ],
       },
       {
         title: "Kanban Board",
         description: "A kanban board app.",
         link: "https://github.com/wojciechmarek/kanban-board",
         tags: ["angular", "typescript", "material design"],
-
-      }
+      },
     ],
   },
   {
@@ -88,36 +97,36 @@ const projects = [
 
 export const Projects = () => {
   return (
-    <ProjectsContainer id="projects">
-      <ProjectsContent>
-        <ProjectsTitle>#some_projects</ProjectsTitle>
-        <ProjectsPanel>
-          {projects.map((project) => (
-            <ProjectsPanelCategory>
-              <ProjectsPanelCategoryTitle>
-                {project.title}
-              </ProjectsPanelCategoryTitle>
-              <ProjectsPanelCategoryTiles>
-                {project.tiles.map((tile) => (
-                  <ProjectsPanelCategoryTile href={tile.link}>
-                    <ProjectsPanelCategoryTileTitle>
-                      {tile.title}
-                    </ProjectsPanelCategoryTileTitle>
-                    <ProjectsPanelCategoryTileDescription>
-                      {tile.description}
-                    </ProjectsPanelCategoryTileDescription>
-                    <ProjectsPanelCategoryTileTags>
-                      {tile.tags?.map((tag) => (
-                        <ProjectsPanelCategoryTileTag>#{tag}</ProjectsPanelCategoryTileTag>
-                      ))}
-                    </ProjectsPanelCategoryTileTags>
-                  </ProjectsPanelCategoryTile>
-                ))}
-              </ProjectsPanelCategoryTiles>
-            </ProjectsPanelCategory>
-          ))}
-        </ProjectsPanel>
-      </ProjectsContent>
-    </ProjectsContainer>
+    <CommonSectionContainer id="projects">
+      <ProjectsTitle>#some_projects</ProjectsTitle>
+      <ProjectsPanel>
+        {projects.map((project) => (
+          <ProjectsPanelCategory>
+            <ProjectsPanelCategoryTitle>
+              {project.title}
+            </ProjectsPanelCategoryTitle>
+            <ProjectsPanelCategoryTiles>
+              {project.tiles.map((tile) => (
+                <ProjectsPanelCategoryTile href={tile.link}>
+                  <ProjectsPanelCategoryTileTitle>
+                    {tile.title}
+                  </ProjectsPanelCategoryTileTitle>
+                  <ProjectsPanelCategoryTileDescription>
+                    {tile.description}
+                  </ProjectsPanelCategoryTileDescription>
+                  <ProjectsPanelCategoryTileTags>
+                    {tile.tags?.map((tag) => (
+                      <ProjectsPanelCategoryTileTag>
+                        #{tag}
+                      </ProjectsPanelCategoryTileTag>
+                    ))}
+                  </ProjectsPanelCategoryTileTags>
+                </ProjectsPanelCategoryTile>
+              ))}
+            </ProjectsPanelCategoryTiles>
+          </ProjectsPanelCategory>
+        ))}
+      </ProjectsPanel>
+    </CommonSectionContainer>
   );
 };
