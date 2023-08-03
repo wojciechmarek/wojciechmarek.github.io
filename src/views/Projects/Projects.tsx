@@ -19,13 +19,13 @@ export const Projects = () => {
       <ProjectsTitle>#some_projects</ProjectsTitle>
       <ProjectsPanel>
         {projects.map((project) => (
-          <ProjectsPanelCategory>
+          <ProjectsPanelCategory key={project.title}>
             <ProjectsPanelCategoryTitle>
               {project.title}
             </ProjectsPanelCategoryTitle>
             <ProjectsPanelCategoryTiles>
               {project.tiles.map((tile) => (
-                <ProjectsPanelCategoryTile href={tile.link}>
+                <ProjectsPanelCategoryTile href={tile.link} key={tile.title} aria-label={tile.title}>
                   <ProjectsPanelCategoryTileTitle>
                     {tile.title}
                   </ProjectsPanelCategoryTileTitle>
@@ -34,7 +34,7 @@ export const Projects = () => {
                   </ProjectsPanelCategoryTileDescription>
                   <ProjectsPanelCategoryTileTags>
                     {tile.tags?.map((tag) => (
-                      <ProjectsPanelCategoryTileTag>
+                      <ProjectsPanelCategoryTileTag key={tag}>
                         #{tag}
                       </ProjectsPanelCategoryTileTag>
                     ))}

@@ -17,14 +17,22 @@ export const Contact = () => {
         <ContactSocialLinks>
           <ContactTitleText>
             Send me an{" "}
-            <ContactMeEmail href="mailto:marekwojciech@outlook.com">
+            <ContactMeEmail
+              href="mailto:marekwojciech@outlook.com"
+              aria-label="Send me an e-mail"
+            >
               e-mail
             </ContactMeEmail>{" "}
             or find me thought social links:
           </ContactTitleText>
           <ContactLinksContainer>
             {links.map((link) => (
-              <ContactLink href={link.link} target="_blank">
+              <ContactLink
+                href={link.link}
+                target="_blank"
+                key={link.name}
+                aria-label={link.name}
+              >
                 {link.name}
               </ContactLink>
             ))}

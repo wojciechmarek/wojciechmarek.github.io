@@ -7,7 +7,7 @@ export const About = () => {
     <CommonSectionContainer id="about">
       <CommonSectionTitle title="#about_me" />
       {about.map((paragraph) => (
-        <AboutTextParagraph>{paragraph}</AboutTextParagraph>
+        <AboutTextParagraph key={paragraph}>{paragraph}</AboutTextParagraph>
       ))}
     </CommonSectionContainer>
   );

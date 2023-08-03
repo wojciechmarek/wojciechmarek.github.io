@@ -33,24 +33,46 @@ export const Navbar = () => {
   return (
     <NavbarContainer>
       <NavbarContent>
-        <NavbarLogoLink>Wojciech Marek</NavbarLogoLink>
+        <NavbarLogoLink href="/" aria-label="Home">
+          Wojciech Marek
+        </NavbarLogoLink>
         <NavbarLinks>
-          <NavbarLink href="#about">About</NavbarLink>
-          <NavbarLink href="#experience">Experience</NavbarLink>
-          <NavbarLink href="#projects">Projects</NavbarLink>
-          {/* <NavbarLink href="#articles">Articles</NavbarLink> */}
-          <NavbarLink href="#contact">Contact</NavbarLink>
-          <NavbarThemeButton onClick={handleThemeClick}>
-            {isDark ? (
-              <span>
-                <SunIcon className="h-6 w-6 text-blue-500" />
-              </span>
-            ) : (
-              <span>
-                <MoonIcon className="h-6 w-6 text-yellow-500" />
-              </span>
-            )}
-          </NavbarThemeButton>
+          <li>
+            <NavbarLink href="#about" aria-label="About">
+              About
+            </NavbarLink>
+          </li>
+          <li>
+            <NavbarLink href="#experience" aria-label="Experience">
+              Experience
+            </NavbarLink>
+          </li>
+          <li>
+            <NavbarLink href="#projects" aria-label="Projects">
+              Projects
+            </NavbarLink>
+          </li>
+          <li>
+            <NavbarLink href="#contact" aria-label="Contact">
+              Contact
+            </NavbarLink>
+          </li>
+          <li>
+            <NavbarThemeButton
+              onClick={handleThemeClick}
+              aria-label={`Toggle theme to ${isDark ? "light" : "dark"}`}
+            >
+              {isDark ? (
+                <span>
+                  <SunIcon className="h-6 w-6 text-blue-500" />
+                </span>
+              ) : (
+                <span>
+                  <MoonIcon className="h-6 w-6 text-yellow-500" />
+                </span>
+              )}
+            </NavbarThemeButton>
+          </li>
         </NavbarLinks>
       </NavbarContent>
     </NavbarContainer>

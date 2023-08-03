@@ -8,7 +8,7 @@ import { Navbar } from "../_Navbar";
 
 export const Layout = () => {
   return (
-    <>
+    <main>
       <Navbar />
       <Landing />
       <About />
@@ -17,6 +17,6 @@ export const Layout = () => {
       {/* <Medium /> */}
       <Contact />
       <Footer />
-    </>
+    </main>
   );
 };

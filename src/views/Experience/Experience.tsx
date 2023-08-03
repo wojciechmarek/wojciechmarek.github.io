@@ -26,7 +26,7 @@ export const Experience = () => {
         {/* <ExperiencePanelVerticalLine /> */}
         <ExperiencePanelContent>
           {experience.map((job) => (
-            <ExperiencePanelJobContainer>
+            <ExperiencePanelJobContainer key={job.name}>
               <ExperiencePanelJobDotContainer>
                 <ExperiencePanelJobDot isActive={job.isActive} />
                 <ExperiencePanelJobDotRing isActive={job.isActive} />

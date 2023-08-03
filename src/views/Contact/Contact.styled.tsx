@@ -82,9 +82,3 @@ export const ContactFormContainer = styled.div`
   flex-direction: column;
   gap: 1em;
 `;
-
-export const ContactFormInput = styled.input``;
-
-export const ContactFormTextArea = styled.textarea``;
-
-export const ContactFormButton = styled.button``;

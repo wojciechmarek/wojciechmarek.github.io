@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export const NavbarContainer = styled.div`
+export const NavbarContainer = styled.nav`
   width: 100%;
   background-color: var(--background-color);
   display: flex;
@@ -29,12 +29,16 @@ export const NavbarLogoLink = styled.a`
   }
 `;
 
-export const NavbarLinks = styled.div`
+export const NavbarLinks = styled.ul`
   display: flex;
   gap: 1.75em;
 
   @media screen and (max-width: 768px) {
     display: none;
+  }
+
+  li {
+    list-style: none;
   }
 `;
 

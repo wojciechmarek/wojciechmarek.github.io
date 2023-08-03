@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export const LandingContainer = styled.div`
+export const LandingContainer = styled.section`
   background-color: var(--background-color);
   height: calc(100vh - 5em);
   display: flex;
