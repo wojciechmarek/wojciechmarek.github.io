@@ -4,7 +4,6 @@ import { About } from "../About";
 import { Projects } from "../Projects";
 import { Footer } from "../Footer";
 import { Contact } from "../Contact";
-import { Medium } from "../Medium";
 import { Navbar } from "../_Navbar";
 
 export const Layout = () => {

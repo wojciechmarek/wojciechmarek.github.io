@@ -15,7 +15,6 @@ import {
   ExperiencePanelJobPositionDescription,
   ExperiencePanelJobPositionDescriptionItem,
   ExperiencePanelJobPositionText,
-  ExperiencePanelVerticalLine,
   ExperienceTitle,
 } from "./Experience.styled";
 
