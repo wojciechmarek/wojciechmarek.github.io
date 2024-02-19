@@ -5,10 +5,12 @@ import { Projects } from "../Projects";
 import { Footer } from "../Footer";
 import { Contact } from "../Contact";
 import { Navbar } from "../_Navbar";
+import { Analytics } from "@vercel/analytics/react";
 
 export const Layout = () => {
   return (
     <main>
+      <Analytics />
       <Navbar />
       <Landing />
       <About />
